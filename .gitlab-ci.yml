@@ -1,0 +1,22 @@
+파일명: `.gitlab-ci.yml`
+파일 내용 예시:
+```yaml
+stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - echo "Building..."
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying..."
